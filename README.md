@@ -9,11 +9,12 @@
 
 <hr />  
 
-#### 1차 (2019. 06. 19) : HashMap, PriorityQueue
+#### 1차 (2019. 06. 19) : HashMap, PriorityQueue(Heap)
 - 문제1: https://programmers.co.kr/learn/courses/30/lessons/42576  
-- 코드1: 
+- 코드1: https://github.com/jukyellow/algorithm-study/blob/master/MaratonParticipant.java  
 - 문제2: https://leetcode.com/problems/reorganize-string/  
-- 코드2:
+- 코드2: https://github.com/jukyellow/algorithm-study/blob/master/ReorganizeString.java
+- 코드2 개선: 
 
 
 
