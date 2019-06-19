@@ -15,7 +15,6 @@
 - 문제2: https://leetcode.com/problems/reorganize-string/  
 - 코드2: https://github.com/jukyellow/algorithm-study/blob/master/ReorganizeString.java
 - 코드2 개선: https://github.com/jukyellow/algorithm-study/blob/master/RecognizedString_PriorityQueue.java  
-![image](https://user-images.githubusercontent.com/45334819/59781890-c4edb180-92f7-11e9-8c1e-c7a25de37272.png)  
 
 #### 2차 (2019. 07. 03) :  
 
