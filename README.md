@@ -9,8 +9,11 @@
 
 <hr />  
 
-#### 1차 (2019. 06. 19)  
-- Hash : https://github.com/jukyellow/algorithm-study/blob/master/2019.06.19_1_hash.MD  
-- String : https://github.com/jukyellow/algorithm-study/blob/master/2019.06.19_2_String.MD  
+#### 1차 (2019. 06. 19) : HashMap, PriorityQueue
+- 문제1: https://programmers.co.kr/learn/courses/30/lessons/42576  
+- 코드1: 
+- 문제2: https://leetcode.com/problems/reorganize-string/  
+- 코드2:
+
 
 
