@@ -65,36 +65,39 @@ public class RecognizedString {
             char currChar = sortedArray[i];
             
             //find other char
-            char nextChar ='\0';
+            char otherChar ='\0';
             int j=i+1;
             for( ; j<sortedArray.length; ++j) {
-                nextChar = sortedArray[j];
-                if(currChar==nextChar) {
+            	otherChar = sortedArray[j];
+                if(currChar!=otherChar) {
+                    break; //find char
+                }else {
+                	//if reach to end
                     if(j+1 == sortedArray.length) {
                         if(reverseChk) {
                             StringBuffer sb2 = new StringBuffer(String.valueOf(sortedArray));                            
                             String reverse = sb2.reverse().toString();
-                            System.out.println("reverse:" + reverse);
+                            //System.out.println("reverse:" + reverse);
                             return mixString(reverse, false);
                         }
                         
                         return ""; //error
                     }
-                    continue;
-                }else {
-                    break; //find char
+                    
+                    continue; //move next
                 }
             }
             
+            //if no find, move to next
             if(i+1 >= sortedArray.length) {
-                break; //end
+                break; 
             }
             
-            //swap
-            if(nextChar!='\0') {
-                char temp = sortedArray[i+1];
-                sortedArray[i+1] = nextChar;
-                sortedArray[j] = temp;
+            //swap next to other
+            if(otherChar!='\0') {
+                char nextChar = sortedArray[i+1];
+                sortedArray[i+1] = otherChar;
+                sortedArray[j] = nextChar;
             }
             //System.out.println("mix i:"+ i +":" + String.valueOf(sortedArray));
         }        
