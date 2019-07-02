@@ -16,8 +16,11 @@
 - 코드2: https://github.com/jukyellow/algorithm-study/blob/master/ReorganizeString.java
 - 코드2 개선: https://github.com/jukyellow/algorithm-study/blob/master/RecognizedString_PriorityQueue.java  
 
-#### 2차 (2019. 07. 03) :  
-
+#### 2차 (2019. 07. 03) : Stack, 
+- 문제1: https://programmers.co.kr/learn/courses/30/lessons/42746   
+- 코드1:
+- 문제2: https://leetcode.com/problems/score-of-parentheses/  
+- 코드2: https://github.com/jukyellow/algorithm-study/blob/master/02_2_ParenthesesScore.java  
 
 
 
