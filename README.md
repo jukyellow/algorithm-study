@@ -21,6 +21,7 @@
 - 코드1: https://github.com/jukyellow/algorithm-study/blob/master/02_1_BigistNumberCombination_sort.java  
 - 문제2: https://leetcode.com/problems/score-of-parentheses/  
 - 코드2: https://github.com/jukyellow/algorithm-study/blob/master/02_2_ParenthesesScore.java  
+- 코드2 개선: (todo. use 2-stack)
 
 
 
