@@ -23,5 +23,11 @@
 - 코드2: https://github.com/jukyellow/algorithm-study/blob/master/02_2_ParenthesesScore.java  
 - 코드2 개선: (todo. use 2-stack)
 
+#### 3차 (2019. 07. 23) : Sort Path, 
+- 문제1: https://leetcode.com/problems/minimum-path-sum/    
+- 코드1: https://github.com/jukyellow/algorithm-study/blob/master/03_1_MinPathSum.java 
+- 문제2: https://leetcode.com/problems/delete-and-earn/
+- 코드2: 
+
 
 
