@@ -29,6 +29,15 @@
 - 문제2: https://leetcode.com/problems/delete-and-earn/
 - 코드2: https://github.com/jukyellow/algorithm-study/blob/master/03_2_DeleteAndEarn_solution_refactoring.java  
 
+#### 4차 (2019. 08. 16) : Cycle, Arithmetic
+- 문제1: https://leetcode.com/problems/find-the-duplicate-number/   
+- 코드1: https://github.com/jukyellow/algorithm-study/blob/master/04_1_FindDupNum.java  
+- 코드1 개선: https://github.com/jukyellow/algorithm-study/blob/master/04_1_2_FindDupNum_RuntimeComplexity-O(n2)_Space-O(1).java
+![image](https://user-images.githubusercontent.com/45334819/63205338-fb6c6080-c0dd-11e9-8fe1-a698931467a7.png)  
+- 문제1 유사문제: https://leetcode.com/problems/linked-list-cycle-ii/  
+- 문제2: https://leetcode.com/problems/arithmetic-slices/  
+- 코드2: https://github.com/jukyellow/algorithm-study/blob/master/04_2_ArithmeticSlice.java   
+
 
 
 
