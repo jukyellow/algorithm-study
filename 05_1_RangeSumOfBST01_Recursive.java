@@ -102,6 +102,7 @@ public class RangeSumOfBST01_Recursive {
     			System.out.println("val:"+node.val);
         		total += node.val;
     		}
+		//최소 값의 왼쪽노드(더 작은값) 이나 최대값의 오른쪽노드(더 큰값)로는 진행하지 않음
     		if(node.val > L) searchTree(node.left, L, R);
     		if(node.val < R) searchTree(node.right, L, R);
     		//searchTree(node.left, L, R);
