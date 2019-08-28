@@ -14,6 +14,7 @@ public class RangeSumOfBST01_Recursive {
 		printInOrderTraversal(root); System.out.println("");
 		printLevelOrderTraversal(root);
 		
+	//BST(binary search tree)ì—ì„œ ë‘ rangeì‚¬ì´ì— ê°’ì˜ í•© 
     	int result = new RangeSumOfBST01_Recursive().rangeSumBST(root, 7, 15);
     	System.out.println("result:"+result);
     }
@@ -45,7 +46,7 @@ public class RangeSumOfBST01_Recursive {
 		}
 	}
 	
-	//ÁßÀ§¼øÈ¸·Î Ãâ·Â(°¡Àå ¿ŞÂÊ subTree->parent->¿À¸¥ÂÊ subTree¼øÀ¸·Î Ãâ·Â)
+	//ì¤‘ìœ„ìˆœíšŒë¡œ ì¶œë ¥(ê°€ì¥ ì™¼ìª½ subTree->parent->ì˜¤ë¥¸ìª½ subTreeìˆœìœ¼ë¡œ ì¶œë ¥)
 	private static void printInOrderTraversal(TreeNode node){
 	    if( node != null ){        
 	    	if(node.left!=null) {
@@ -54,7 +55,7 @@ public class RangeSumOfBST01_Recursive {
 	    	}
 	    	
 	    	if("L".equals(node.emptySibling)) System.out.print(null + " ");
-	    	// ¿ŞÂÊ ¸ÕÀú Æ®¸®¸¦ Ã£¾Æ °¬´Ù°¡ ¿ŞÂÊÀÌ ¾øÀ¸¸é ¹æ¹®ÇÏ°í ¿À¸¥ÂÊÀ» °¡±â ¶§¹®¿¡ ÁßÀ§ ¼øÈ¸
+	    	// ì™¼ìª½ ë¨¼ì € íŠ¸ë¦¬ë¥¼ ì°¾ì•„ ê°”ë‹¤ê°€ ì™¼ìª½ì´ ì—†ìœ¼ë©´ ë°©ë¬¸í•˜ê³  ì˜¤ë¥¸ìª½ì„ ê°€ê¸° ë•Œë¬¸ì— ì¤‘ìœ„ ìˆœíšŒ
 	    	System.out.print(node.val + " ");
 			if("R".equals(node.emptySibling)) System.out.print(null + " ");
 			
@@ -64,7 +65,7 @@ public class RangeSumOfBST01_Recursive {
 	        }
 	    }
 	}
-	//Ãşº°¼øÈ¸
+	//ì¸µë³„ìˆœíšŒ
 	private static void printLevelOrderTraversal(TreeNode root){
 		LinkedList<TreeNode> queue = new LinkedList<TreeNode>();
 		queue.add(root);
