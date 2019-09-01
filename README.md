@@ -38,7 +38,12 @@
 - 문제2: https://leetcode.com/problems/arithmetic-slices/  
 - 코드2: https://github.com/jukyellow/algorithm-study/blob/master/04_2_ArithmeticSlice.java   
 
-
+#### 5차 (2019. 08. 28) : BST(Binary Search Tree)  
+- 이론정리: https://www.evernote.com/shard/s222/sh/170c49d1-0bc8-4cbd-ac4c-93a23dae1b6a/45ca0f585ad7c75fcdcc9ddba3e60303  
+- 문제1: https://leetcode.com/problems/range-sum-of-bst/  
+- 코드1: https://github.com/jukyellow/algorithm-study/blob/master/05_1_RangeSumOfBST01_Recursive.java  
+- 문제2: https://leetcode.com/problems/delete-node-in-a-bst/  
+- 코드2: https://github.com/jukyellow/algorithm-study/blob/master/05_2_DeleteBST.java  
 
 
 
