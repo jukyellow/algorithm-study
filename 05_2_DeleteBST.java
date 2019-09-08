@@ -5,13 +5,75 @@ import java.util.LinkedList;
 public class DeleteBST {
     public static void main(String args[]) {
         // root = [10,5,15,3,7,null,18]
-        addNode(10);
+        //addNode(10);
+        //addNode(5);
+        //addNode(15);
+        //addNode(3);
+        //addNode(7);
+        //addNode(18);
+        
+        //root = [2,0,33,null,1,25,40,null,null,11,31,34,45,10,18,29,32,null,36,43,46,4,null,12,24,26,30,null,null,35,39,42,44,null,48,3,9,null,14,22,null,null,27,null,null,null,null,38,null,41,null,null,null,47,49,null,null,5,null,13,15,21,23,null,28,37,null,null,null,null,null,null,null,null,8,null,null,null,17,19,null,null,null,null,null,null,null,7,null,16,null,null,20,6]
+        //delete 33
+//        addNode(2);
+//        addNode(0);
+//        addNode(33);
+//        addNode(1);
+//        addNode(25);
+//        addNode(40);
+//        addNode(11);
+//        addNode(31);
+//        addNode(34);
+//        addNode(45);
+//        addNode(10);
+//        addNode(18);
+//        addNode(29);
+//        addNode(32);
+//        addNode(36);
+//        addNode(43);
+//        addNode(46);
+//        addNode(4);
+//        addNode(12);
+//        addNode(24);
+//        addNode(26);
+//        addNode(30);
+//        addNode(35);
+//        addNode(39);
+//        addNode(42);
+//        addNode(44);
+//        addNode(48);
+//        addNode(3);
+//        addNode(9);
+//        addNode(14);
+//        addNode(22);
+//        addNode(27);
+//        addNode(38);
+//        addNode(41);
+//        addNode(47);
+//        addNode(49);
+//        addNode(5);
+//        addNode(13);
+//        addNode(15);
+//        addNode(21);
+//        addNode(23);
+//        addNode(28);
+//        addNode(37);
+//        addNode(8);
+//        addNode(17);
+//        addNode(19);
+//        addNode(7);
+//        addNode(16);
+//        addNode(20);
+//        addNode(6);
+        
+        //[5,3,6,2,4,null,7]
+        //delete 3
         addNode(5);
-        addNode(15);
         addNode(3);
+        addNode(6);
+        addNode(2);
+        addNode(4);
         addNode(7);
-        addNode(18);
-    	System.out.print("printInOrderTraversal: ");
+        System.out.print("printInOrderTraversal: ");
         printInOrderTraversal(root); System.out.println("");
         printLevelOrderTraversal(root);
         
@@ -21,7 +83,7 @@ public class DeleteBST {
         
         //노드 삭제
         System.out.println("\ndelete node:");
-        new DeleteBST().deleteNode(root, 5);
+        new DeleteBST().deleteNode(root, 3);
         printLevelOrderTraversal(root);
     }
     
@@ -53,7 +115,7 @@ public class DeleteBST {
     }
     
     //중위순회로 출력(가장 왼쪽 subTree->parent->오른쪽 subTree순으로 출력)
-    private static void printInOrderTraversal(TreeNode3 node){    	
+    private static void printInOrderTraversal(TreeNode3 node){        
         if( node != null ){        
             if(node.left!=null) {
                 if(node.right==null) node.left.emptySibling="R"; 
@@ -73,8 +135,8 @@ public class DeleteBST {
     }
     //층별순회
     private static void printLevelOrderTraversal(TreeNode3 root){
-    	System.out.print("printLevelOrderTraversal: ");
-    	
+        System.out.print("printLevelOrderTraversal: ");
+        
         LinkedList<TreeNode3> queue = new LinkedList<TreeNode3>();
         queue.add(root);
         
@@ -118,6 +180,8 @@ public class DeleteBST {
     }
     
     public TreeNode3 deleteNode(TreeNode3 root, int key) {
+        if(root==null) { return null; }
+        
         TreeNode3 parent = root;
         TreeNode3 current = root;
         boolean isLeftChild = false;
@@ -189,10 +253,19 @@ public class DeleteBST {
             target = current;
             current = current.left;
         }
+        System.out.println("1 target.val:" + target.val);
         // target의 right에 삭제할 노드의 right노드를 세팅
-        while(target != deleteNode.right) {
-            targetParent.left = null; //target.right ??
+        while(true) {
+            if(target == deleteNode.right) break; //하위 노드가 없는경우
+            if(target.right == deleteNode.right) break; //하위 노드가 있는경우
+            
+            targetParent.left = target.right;
+            //System.out.println("2 targetParent.left.val:" + targetParent.left.val);
+            if(targetParent.right==null) { if(targetParent.left!=null) targetParent.left.emptySibling="R"; }
+            else { if(targetParent.left!=null) targetParent.left.emptySibling=""; }
+            
             target.right = deleteNode.right;
+            //System.out.println("3 target.right.val:" + target.right.val);
         }
         
         return target;
