@@ -1,6 +1,6 @@
 package com.juk.algo.A0917;
 
-import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Random;
 
 public class TinyURL {    
@@ -17,7 +17,7 @@ public class TinyURL {
 }
 
 class Codec {
-    private HashMap urlMap = new HashMap();
+    private static Hashtable urlTable = new Hashtable(); //thread safe
     private final String baseUrl = "http://tinyurl.com/";
     
     // Encodes a URL to a shortened URL.
@@ -41,12 +41,12 @@ class Codec {
         }
         
         String tinyUrl = baseUrl + rndKeySB.toString();
-        urlMap.put(tinyUrl, longUrl);
+        urlTable.put(tinyUrl, longUrl);
         return tinyUrl;
     }
 
     // Decodes a shortened URL to its original URL.
     public String decode(String shortUrl) {
-        return (String) urlMap.get(shortUrl);
+        return (String) urlTable.get(shortUrl);
     }
 }
