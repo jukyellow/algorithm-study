@@ -21,7 +21,7 @@ class Codec {
     private final String baseUrl = "http://tinyurl.com/";
     
     // Encodes a URL to a shortened URL.
-    public String encode(String longUrl) {
+    public synchronized String encode(String longUrl) {
         StringBuffer rndKeySB = new StringBuffer();
         Random rnd = new Random();
         
