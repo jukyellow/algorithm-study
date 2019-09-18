@@ -44,7 +44,15 @@
 - 코드1: https://github.com/jukyellow/algorithm-study/blob/master/05_1_RangeSumOfBST01_Recursive.java  
 - 문제2: https://leetcode.com/problems/delete-node-in-a-bst/  
 - 코드2: https://github.com/jukyellow/algorithm-study/blob/master/05_2_DeleteBST.java  
-![image](https://user-images.githubusercontent.com/45334819/64082340-6b1e5480-cd48-11e9-9f4f-7d2761e8cd10.png)  
+![image](https://user-images.githubusercontent.com/45334819/64082340-6b1e5480-cd48-11e9-9f4f-7d2761e8cd10.png)
+
+#### 6차 (2019.09.19) : TinyURL, Rotate String
+- 문제1: https://leetcode.com/problems/rotate-string/  
+- 코드1: https://github.com/jukyellow/algorithm-study/blob/master/06_1_RotateString.java  
+- 문제2: https://leetcode.com/problems/encode-and-decode-tinyurl/   
+- 코드2: https://github.com/jukyellow/algorithm-study/blob/master/06_2_TinyURL.java  
+![image](https://user-images.githubusercontent.com/45334819/64995445-37315a80-d916-11e9-94e6-8ce26d52fd90.png)  
+
 
 
 
