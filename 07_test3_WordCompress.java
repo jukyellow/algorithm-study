@@ -21,8 +21,6 @@ public class test3_WordCompress {
         while(inputStr.length()>0) {
             int k = Integer.parseInt(bufferedReader.readLine().trim());
             inputStr = WordCompress.compressWord(inputStr, k);
-            bufferedWriter.write(inputStr);
-            //bufferedWriter.newLine();
         }
 
         bufferedReader.close();
@@ -34,6 +32,10 @@ public class test3_WordCompress {
 //큐를 이용!, K에 해당하는 연속된 문자일때 바로제거->K문자가 아니면, 큐에 넣되 같은 문자의 연속이면 합쳐서 넣고 이때 K가 되면 다시 큐에서 제거->큐에서 FIFO 추출후 압축해제
 class WordCompress {
     public static String compressWord(String input, int REMOVE_LEN) {
+    	if(input==null || input.trim().length()==0) {
+    		return "";
+    	}
+    	
         //1.전처리: 압축
         StringBuffer compressSB = new StringBuffer();
         char[] charArr = input.toCharArray();
