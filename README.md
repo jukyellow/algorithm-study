@@ -53,6 +53,13 @@
 - 코드2: https://github.com/jukyellow/algorithm-study/blob/master/06_2_TinyURL.java  
 ![image](https://user-images.githubusercontent.com/45334819/64995445-37315a80-d916-11e9-94e6-8ce26d52fd90.png)  
 
+#### 7차 (2019.10.03) : Sort String, Compare String, Word Compress
+> K사 test(9/15)  
+- 코드1: https://github.com/jukyellow/algorithm-study/blob/master/07_test1_ArrSort.java  
+- 코드2: https://github.com/jukyellow/algorithm-study/blob/master/07_test2_StrCompare.java  
+- 코드3: https://github.com/jukyellow/algorithm-study/blob/master/07_test3_WordCompress.java  
+
+
 
 
 
