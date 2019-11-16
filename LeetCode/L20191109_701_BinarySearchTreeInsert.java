@@ -4,7 +4,7 @@ package leetcode;
 
 import java.util.LinkedList;
 
-public class BinarySearchTreeInsert {
+public class L20191109_701_BinarySearchTreeInsert {
 
 	public static void main(String[] args) {
 		// root = [4,2,7,1,3]
