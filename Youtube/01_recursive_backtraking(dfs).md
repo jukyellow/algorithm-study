@@ -12,6 +12,7 @@
 -Sudo code: 해당 노드가 promising한지 검사-> 찾는해와 동일한지 검사-> 아니라면 하위노드 방문(재귀호출)  
 ![image](https://user-images.githubusercontent.com/45334819/71771755-e5bfe080-2f83-11ea-8962-dcfa8396b807.png)
 
+- 코드샘플:  
 ![image](https://user-images.githubusercontent.com/45334819/71771762-ef494880-2f83-11ea-864b-adbde815f847.png)
 ![image](https://user-images.githubusercontent.com/45334819/71771774-17d14280-2f84-11ea-8bf1-9ce6060e40a1.png)
 
