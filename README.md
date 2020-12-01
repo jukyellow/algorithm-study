@@ -1,5 +1,8 @@
 # algorithm-study
 
+### 0. 코딩 테스트 개요
+- 온라인 개발환경, 유형정리: https://github.com/jukyellow/algorithm-study/tree/master/%EC%9D%B4%EA%B2%83%EC%9D%B4%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4  
+
 ### 1. 코딩테스트 사이트  
 * https://leetcode.com/problemset/all/         (특징: 답안예시 존재)  
 * https://algospot.com/judge/problem/list/  
