@@ -1,6 +1,7 @@
 
 
 ### 1. 코딩 테스트 개요  
+- 저자 github: https://github.com/ndb796/python-for-coding-test  
 
 #### 온라인 저지(judge) 사이트
 - 해외: 코드포스, 탑코더, 릿코드, 코드셰프  
